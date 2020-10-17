@@ -81,3 +81,11 @@ function doubleAssets() {
     }
     calculateTotal();
 }
+
+function sortByValue() {
+    people.sort(function (a, b) {
+        return b.money - a.money;
+    });
+    emptyTable(2);
+    createTable();
+}

@@ -1,8 +1,8 @@
 body {
     margin: 0 !important;
     height: 100vh;
-    background: rgb(45, 121, 31);
-    background: linear-gradient(140deg, rgba(45, 121, 31, 1) 0%, rgba(84, 176, 89, 1) 36%, rgba(230, 236, 114, 1) 100%);
+    background: rgb(121,255,80);
+    background: linear-gradient(150deg, rgba(121,255,80,1) 0%, rgba(255,88,88,1) 73%, rgba(251,255,94,1) 100%);
     justify-content: center;
     align-items: center;
     display: flex;
@@ -14,6 +14,10 @@ body {
     justify-content: center;
     text-align: center;
     background-color: white;
+    border-radius: 7%;
+    -webkit-box-shadow: 10px 10px 20px -6px rgba(46,45,46,1);
+    -moz-box-shadow: 10px 10px 20px -6px rgba(46,45,46,1);
+    box-shadow: 10px 10px 20px -6px rgba(46,45,46,1);
 }
 
 #assets-header {

@@ -20,12 +20,13 @@
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary" onclick="addPerson();">Add Person</button>
                     <button type="button" class="btn btn-secondary" onclick="emptyTable(1);">Empty List</button>
-                    <button type="button" class="btn btn-secondary">Sort by Assets</button>
+                    <button type="button" class="btn btn-secondary" onclick="sortByValue();">Sort by Assets</button>
                 </div>
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary" onclick="reverseTable();">Reverse the List</button>
                     <button type="button" class="btn btn-secondary" onclick="doubleAssets();">Double All Assets</button>
-                    <button type="button" class="btn btn-secondary" onclick="calculateTotal();">Calculate the Total</button>
+                    <button type="button" class="btn btn-secondary" onclick="calculateTotal();">Calculate the
+                        Total</button>
                 </div>
                 <table class="table">
                     <thead class="thead-dark">
@@ -35,15 +36,12 @@
                             <th>Money</th>
                         </tr>
                     </thead>
-                    <tbody id="person-table">
-
-                    </tbody>
+                    <tbody id="person-table"></tbody>
                 </table>
             </div>
             <div class="col-md-1"></div>
         </div>
     </div>
-
 </body>
 <script type="text/javascript" src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
