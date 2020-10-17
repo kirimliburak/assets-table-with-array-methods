@@ -19,7 +19,7 @@ In this project user can perform the followings:
 
 Random User Generator API was used in this project to generate random and meaningful person name and surname.
 
-Random User Generator API link = [Link]
+Random User Generator API link = [https://randomuser.me/]
 
-[Link]: <https://randomuser.me/>
+[https://randomuser.me/]: <https://randomuser.me/>
 ![alt text](/images/asset-table.jpg)
