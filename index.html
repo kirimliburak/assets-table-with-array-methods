@@ -16,6 +16,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
                 <p id="assets-header">Assets Table</p>
+                <p id="total-assets"></p>
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary" onclick="addPerson();">Add Person</button>
                     <button type="button" class="btn btn-secondary" onclick="emptyTable(1);">Empty List</button>
@@ -23,8 +24,8 @@
                 </div>
                 <div class="btn-group" role="group">
                     <button type="button" class="btn btn-secondary" onclick="reverseTable();">Reverse the List</button>
-                    <button type="button" class="btn btn-secondary">Double All Assets</button>
-                    <button type="button" class="btn btn-secondary">Calculate the Total</button>
+                    <button type="button" class="btn btn-secondary" onclick="doubleAssets();">Double All Assets</button>
+                    <button type="button" class="btn btn-secondary" onclick="calculateTotal();">Calculate the Total</button>
                 </div>
                 <table class="table">
                     <thead class="thead-dark">

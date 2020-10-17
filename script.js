@@ -12,6 +12,7 @@ async function apiRequest() {
 
 let people = [];
 let counter = 1;
+let total = 0;
 
 function addTable(item, index) {
     var tableElement = document.createElement('tr');
@@ -52,11 +53,31 @@ function emptyTable(value) {
 
     if (parseInt(value) == 1) {
         people = [];
+        total = 0;
+        document.getElementById("total-assets").style.display = "none";
     }
 }
 
-function reverseTable(){
+function reverseTable() {
     emptyTable(2);
     people.reverse();
     createTable();
+}
+
+function calculateTotal() {
+    for (let index = 0; index < people.length; index++) {
+        total = total + people[index].money;
+    }
+    document.getElementById("total-assets").style.display = "block";
+    document.getElementById("total-assets").innerText = `Total: ${total}`;
+    total = 0;
+}
+
+function doubleAssets() {
+    for (let index = 0; index < people.length; index++) {
+        people[index].money *= 2;
+        emptyTable(2);
+        createTable();
+    }
+    calculateTotal();
 }
