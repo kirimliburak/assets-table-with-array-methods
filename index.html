@@ -10,7 +10,38 @@
     <title>Assets Table</title>
 </head>
 
-<body onload="addPerson();">
+<body>
+    <div class="container" id="main-container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <p id="assets-header">Assets Table</p>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary" onclick="addPerson();">Add Person</button>
+                    <button type="button" class="btn btn-secondary" onclick="emptyTable(1);">Empty List</button>
+                    <button type="button" class="btn btn-secondary">Sort by Assets</button>
+                </div>
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-secondary" onclick="reverseTable();">Reverse the List</button>
+                    <button type="button" class="btn btn-secondary">Double All Assets</button>
+                    <button type="button" class="btn btn-secondary">Calculate the Total</button>
+                </div>
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Full Name</th>
+                            <th>Money</th>
+                        </tr>
+                    </thead>
+                    <tbody id="person-table">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
 
 </body>
 <script type="text/javascript" src="script.js"></script>

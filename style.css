@@ -1,0 +1,32 @@
+body {
+    margin: 0 !important;
+    height: 100vh;
+    background: rgb(45, 121, 31);
+    background: linear-gradient(140deg, rgba(45, 121, 31, 1) 0%, rgba(84, 176, 89, 1) 36%, rgba(230, 236, 114, 1) 100%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+#assets-header {
+    font-size: 28px;
+    font-weight: 500;
+    color: rgb(30, 209, 30);
+}
+
+.btn-group {
+    margin: 2%;
+}
+
+.btn-group button {
+    margin-right: 15px;
+    margin-left: 15px;
+}
